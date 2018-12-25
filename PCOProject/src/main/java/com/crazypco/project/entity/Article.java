@@ -8,7 +8,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-import com.crazypco.project.repository.Comment;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
@@ -19,7 +18,7 @@ public class Article {
 
 	private String nickname;
 
-	@JsonIgnore // ë¹„ë?ë²ˆí˜¸?Š” client?— ? „?‹¬?´ ?•ˆ?˜?„ë¡? ?•œ?‹¤.(jackson annotation)
+	@JsonIgnore // ë¹„ï¿½?ë²ˆí˜¸?ï¿½ï¿½ client?ï¿½ï¿½ ?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½ ?ï¿½ï¿½?ï¿½ï¿½?ï¿½ï¿½ï¿½? ?ï¿½ï¿½?ï¿½ï¿½.(jackson annotation)
 	private String password;
 
 	private String content;

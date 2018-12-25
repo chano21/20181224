@@ -1,4 +1,4 @@
-package com.crazypco.project.repository;
+package com.crazypco.project.entity;
 
 import java.util.Date;
 
@@ -19,7 +19,7 @@ public class Comment {
 
 	private String nickname;
 
-	@JsonIgnore // ?��꾨�踰덊?���뒗 cdlient�뿉 �쟾�떖�씠 �븞�릺�룄濡� �븳�떎.(jackson annotation)
+	@JsonIgnore // ?��꾨�踰덊?���뒗 cdlient�뿉 �쟾�떖�씠 �븞�릺�룄濡� �븳�떎.(jackson annotation)
 	private String password;
 
 	private String content;

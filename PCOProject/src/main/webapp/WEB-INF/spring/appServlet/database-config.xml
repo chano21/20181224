@@ -56,7 +56,6 @@
 		</property>
 	</bean>
 
-
 	<!-- Jpa repository -->
 	<jpa:repositories base-package="com.crazypco.project.repository" entity-manager-factory-ref="entityManagerFactory" />
 

@@ -11,7 +11,8 @@
 	<properties>
 		<java-version>1.8</java-version>
 		<org.springframework-version>4.1.7.RELEASE</org.springframework-version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<org.springframework.security-version>3.2.3.RELEASE</org.springframework.security-version>
+			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<spring.data.jpa>1.9.4.RELEASE</spring.data.jpa>
 		<hibernate.version>4.3.10.Final</hibernate.version>
@@ -61,6 +62,34 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.18</version>
 		</dependency>
+		<!-- security -->
+		   <dependency>
+
+            <groupId>org.springframework.security</groupId>
+
+            <artifactId>spring-security-web</artifactId>
+
+            <version>${org.springframework.security-version}</version>
+
+        </dependency>
+
+
+<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${org.springframework.security-version}</version>
+		</dependency>
+		
+<!--         <dependency>
+
+            <groupId>org.springframework.security</groupId>
+
+            <artifactId>spring-security-config</artifactId>
+
+            <version>${org.springframework.security-version}</version>
+
+        </dependency>	  
+ -->
 
 		<!-- Database -->
 		<dependency>
@@ -70,12 +99,7 @@
 		</dependency>
 
 
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-test</artifactId>
-    <version>3.2.3.RELEASE</version>
-    <scope>test</scope>
-</dependency>
+
 
 		<!-- AspectJ -->
 		<dependency>
@@ -157,9 +181,17 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.7</version>
+			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- spring test -->
+		     <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${org.springframework-version}</version>
+        </dependency>
+        
+		
 	</dependencies>
 	<build>
 		<plugins>

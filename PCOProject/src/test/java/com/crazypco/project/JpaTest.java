@@ -1,20 +1,30 @@
 package com.crazypco.project;
 
-import static org.junit.Assert.*;
+import java.util.List;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-@ContextConfiguration(locations = "classpath:application-context-test.xml")
+import com.crazypco.project.entity.Article;
+import com.crazypco.project.repository.ArticleRepository;
+
+@ContextConfiguration(locations = "classpath:CONF-INFO/conf-database.xml")
 @RunWith(SpringJUnit4ClassRunner.class)
 public class JpaTest {
 
-	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}
+	@Autowired
+	ArticleRepository repository;
+	 
+	
 
+	 @Test
+	 public void testDistinctSido() {
+		 List<Article> result = repository.findAll();
+		 for(Article s : result)
+			 System.out.println(s);
+	 }
 }
-//https://howtodoinjava.com/best-practices/how-you-should-unit-test-dao-layer/
+//

@@ -1,4 +1,4 @@
-package com.crazypco.security;
+/*package com.crazypco.security;
 
 import java.util.ArrayList;
 
@@ -18,10 +18,10 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-/*import com.company.wmos.model.UserVO;
+import com.company.wmos.model.UserVO;
 
 import com.company.wmos.service.UserService;
-*/
+
 public class SecurityService implements UserDetailsService{
 
 	@Autowired
@@ -53,3 +53,4 @@ public class SecurityService implements UserDetailsService{
 
 }
 
+*/

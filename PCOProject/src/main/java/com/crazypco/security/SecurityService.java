@@ -24,8 +24,8 @@ import com.company.wmos.service.UserService;
 */
 public class SecurityService implements UserDetailsService{
 
-	@Autowired UserService
-	userService;
+	@Autowired
+	UserService userService;
 
 	@Override
 
